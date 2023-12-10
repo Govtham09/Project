@@ -1,8 +1,13 @@
 const cart = [];
 
-const handleCart = (state = cart, action) => {
+const handleCartReducer = (state = cart, action) => {
   const product = action.payload;
   switch (action.type) {
+    case "DEL_CART":
+      if (action.completeRemoval) {
+        return state.filter((item) => item.id !== action.payload.id);
+      }
+
     case "ADDITEM": {
       const exist = state.find((x) => x.id === product.id);
       if (exist) {
@@ -34,4 +39,4 @@ const handleCart = (state = cart, action) => {
   }
 };
 
-export default handleCart;
+export default handleCartReducer;
