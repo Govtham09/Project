@@ -13,3 +13,12 @@ export const delCart = (product) => {
     payload: product,
   };
 };
+
+//For Removing entire product from cart
+export const delCartItem = (item, completeRemoval = true) => {
+  return {
+    type: "DEL_CART",
+    payload: item,
+    completeRemoval,
+  };
+};
