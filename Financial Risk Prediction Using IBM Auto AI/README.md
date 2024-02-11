@@ -1,6 +1,6 @@
 ﻿PROJECT COMPLETION CERTIFICATE
 
-**T H I S C E R T I F I E S T H AT**
+**THIS CERTIFIES THAT**
 
 **Kavdapu Govtham**
 
